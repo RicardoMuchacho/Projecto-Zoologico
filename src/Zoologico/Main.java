@@ -1,14 +1,16 @@
 package Zoologico;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
 	
 	public static void main(String[] args) {
+	
 		String especieNueva, habitatNuevo;
 		int cantidadNueva;
 		int i, n, elementos;
-	
+		
         Scanner entrada = new Scanner(System.in);
         /*
 	    Lista de animales:
@@ -36,11 +38,18 @@ public class Main {
 		zoologico[13] = new Anfibio("axolotl", "Lagunas", 1, "jaula con agua");
 		zoologico[14] = new Anfibio("ranas", "Lagunas", 1, "jaula con agua");
 		
-		System.out.println("Mostrando todos los animales: ");
-		for(Animal animales: zoologico) {
-		System.out.println("\n"+animales.toString());
-	}
+ArrayList<Animal> zoo = new ArrayList();
+for (i=0; i<zoologico.length;i++) {
+zoo.add(zoologico[i]);
+}
+		String animalesZoo = new String();
 		
+		 		 for(i=0; i<zoologico.length;i++) {
+		animalesZoo += "\n\n"+zoologico[i].toString();
+	}
+		 		System.out.println(animalesZoo) ;
+		 		 
+		 		/*
 		zoologico[0].respirar();
 		Acuatico pecesito = new Acuatico();
 		pecesito.nadar();
@@ -71,6 +80,10 @@ public class Main {
 			System.out.println("\n"+ nuevosAnimales[i].toString());
 		}
 	}
-
+*/
+		
+	UI ui = new UI(zoo);
+		
+		
 	}
 }
