@@ -38,10 +38,14 @@ public class Main {
 		zoologico[13] = new Anfibio("axolotl", "Lagunas", 1, "jaula con agua");
 		zoologico[14] = new Anfibio("ranas", "Lagunas", 1, "jaula con agua");
 		
+		
+		
 ArrayList<Animal> zoo = new ArrayList();
 for (i=0; i<zoologico.length;i++) {
 zoo.add(zoologico[i]);
 }
+
+/*
 		String animalesZoo = new String();
 		
 		 		 for(i=0; i<zoologico.length;i++) {
@@ -49,7 +53,7 @@ zoo.add(zoologico[i]);
 	}
 		 		System.out.println(animalesZoo) ;
 		 		 
-		 		/*
+		 	
 		zoologico[0].respirar();
 		Acuatico pecesito = new Acuatico();
 		pecesito.nadar();
@@ -82,7 +86,7 @@ zoo.add(zoologico[i]);
 	}
 */
 		
-	UI ui = new UI(zoo);
+	UI2 ui = new UI2(zoo);
 		
 		
 	}
