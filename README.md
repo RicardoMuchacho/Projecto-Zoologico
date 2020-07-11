@@ -1,6 +1,6 @@
 # Projecto-Zoologico
 
-Projecto #1 Zoologico OOP 
+Projecto Zoologico OOP 
 
 Alumno
 Ricardo Muchacho
@@ -8,9 +8,11 @@ ci: 27849052
 telf: 04246411313
 Seccion A
 
-Proyecto hecho en java de las bases de OOP
+Proyecto #1 OOP Zoologico Bases. branch master. Se creo un programa basico de zoologico en Java
 
 
-Projecto #2 Zoologico OOP. Branch UI
+Projecto #2 OOP Zoologio UI. Branch UI. Se agrego una UI usando Java Swing
 
-Se agrego una UI usando Java Swing
+
+Projecto #3 OOP Zoologico DB. Branch database. Se agrego una base de datos al proyecto
+
