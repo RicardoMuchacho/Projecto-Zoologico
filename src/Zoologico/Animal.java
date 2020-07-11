@@ -36,7 +36,7 @@ public class Animal {
 		this.habitat = habitat;
 	}
 
-	public float getCantidad() {
+	public int getCantidad() {
 		return cantidad;
 	}
 

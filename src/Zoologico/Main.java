@@ -1,6 +1,7 @@
 package Zoologico;
 
 import java.util.Scanner;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -10,6 +11,7 @@ public class Main {
 		String especieNueva, habitatNuevo;
 		int cantidadNueva;
 		int i, n, elementos;
+		Object objetoActual;
 		
         Scanner entrada = new Scanner(System.in);
         /*
@@ -45,7 +47,44 @@ for (i=0; i<zoologico.length;i++) {
 zoo.add(zoologico[i]);
 }
 
+ArrayList<Object> objetos2 = new ArrayList();
+for (i=0; i<zoologico.length;i++) {
+objetos2.add(zoologico[i]);
+}
+
+ArrayList<Animal> animalesAcuaticos = new ArrayList();
+for (i=0; i<5;i++) {
+animalesAcuaticos.add(zoologico[i]);
+}
+
+ArrayList<Animal> animalesAereos = new ArrayList();
+for (i=5; i<8;i++) {
+animalesAereos.add(zoologico[i]);
+}
+
+ArrayList<Animal> animalesTerrestres = new ArrayList();
+for (i=8; i<13;i++) {
+animalesTerrestres.add(zoologico[i]);
+}
+
+ArrayList<Animal> animalesAnfibios = new ArrayList();
+for (i=13; i<15;i++) {
+animalesAnfibios.add(zoologico[i]);
+}
+
+
+//System.out.println(zoo.get(0).getEspecie());
+
+
+
+
+	 		
+	 		 
 /*
+ for(i=0; i<animalesAnfibios.size();i++) {
+	System.out.println("\n" + animalesAnfibios.get(i)) ;
+}
+ 
 		String animalesZoo = new String();
 		
 		 		 for(i=0; i<zoologico.length;i++) {
@@ -86,8 +125,40 @@ zoo.add(zoologico[i]);
 	}
 */
 		
-	UI2 ui = new UI2(zoo);
-		
-		
-	}
+	UI2 ui = new UI2();
+	
+DB db = DB.getInstances();
+
+
+
+//db.dbPrepareStatementStr1("select *from animales where especie = ", "pez");
+
+
+/*
+
+for(i=0; i<15;i++) {
+	
+Object [] obj = {zoo.get(i).getEspecie(), zoo.get(i).getHabitat(), zoo.get(i).getCantidad()};
+	
+
+db.dbPrepareStatement("insert into animales(especie, habitat, cantidad) values( ?, ?, ? )", obj );
+
+}
+//db.dbPrepareStatement("insert into animales(especie, habitat, cantidad) values( ?, ?, ? )", );
+
+
+Object[] obj = {"pab", "pedrokk@gmail.com", 5};
+db.dbPrepareStatement("insert into animales(especie, habitat, cantidad) values( ?, ?, ? )", obj);
+
+
+
+//db.dbStatementBusqueda("SELECT *FROM animales WHERE especie ='"+ prueba1+"';");
+
+System.out.println(db.resultString);
+System.out.println(db.resultEspecie);
+System.out.println(db.resultHabitat);
+System.out.println(db.resultCantidad);
+System.out.println(db.resultError);
+*/
+}
 }
