@@ -1,5 +1,6 @@
 package Zoologico;
 
+import Database.*;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JButton;
@@ -18,12 +19,12 @@ import javax.swing.JTextArea;
 
 public class AgregarView extends JFrame {
 
+	DB db = DB.getInstances();
+	
 	private JPanel contentPane;
 	private JTextField txtEspecie;
 	private JTextField txtHabitat;
 	private JTextField txtCantidad;
-	
-	DB db = DB.getInstances();
 	
 	public AgregarView() {
 		

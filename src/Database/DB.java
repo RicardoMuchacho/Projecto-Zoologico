@@ -1,4 +1,5 @@
-package Zoologico;
+package Database;
+
 
 import java.sql.*;
 
