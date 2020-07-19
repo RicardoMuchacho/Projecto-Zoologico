@@ -16,5 +16,5 @@ Projecto #2 OOP Zoologio UI. Branch UI. Se agrego una UI usando Java Swing
 
 Projecto #3 OOP Zoologico DB. Branch database. Se agrego una base de datos al proyecto
 
-Projecto #4 OOP Zoologico Cliente/Servidor. Branch cliente_y_servidor. Se agrego una version y Cliente y una Servidor
+Projecto #4 OOP Zoologico Cliente/Servidor. Branch cliente_y_servidor. Se agrego una version Cliente y una Servidor
 
