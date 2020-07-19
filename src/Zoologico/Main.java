@@ -1,6 +1,7 @@
 package Zoologico;
 
 import java.util.Scanner;
+import Server.*;
 
 import java.util.ArrayList;
 
@@ -127,40 +128,25 @@ animalesAnfibios.add(zoologico[i]);
 	}
 */
 		
+
 	UI2 ui = new UI2();
-	
-DB db = DB.getInstances();
-
-
+    ServerConexion s = new ServerConexion();
+    DB db = DB.getInstances();
 
 //db.dbPrepareStatementStr1("select *from animales where especie = ", "pez");
-
-
 /*
-
 for(i=0; i<15;i++) {
 	
 Object [] obj = {zoo.get(i).getEspecie(), zoo.get(i).getHabitat(), zoo.get(i).getCantidad()};
 	
-
 db.dbPrepareStatement("insert into animales(especie, habitat, cantidad) values( ?, ?, ? )", obj );
-
 }
 //db.dbPrepareStatement("insert into animales(especie, habitat, cantidad) values( ?, ?, ? )", );
-
 
 Object[] obj = {"pab", "pedrokk@gmail.com", 5};
 db.dbPrepareStatement("insert into animales(especie, habitat, cantidad) values( ?, ?, ? )", obj);
 
-
-
 //db.dbStatementBusqueda("SELECT *FROM animales WHERE especie ='"+ prueba1+"';");
-
-System.out.println(db.resultString);
-System.out.println(db.resultEspecie);
-System.out.println(db.resultHabitat);
-System.out.println(db.resultCantidad);
-System.out.println(db.resultError);
 */
 }
 }
